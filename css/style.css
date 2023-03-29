@@ -1,0 +1,223 @@
+@import "./reset.css";
+
+html, body {
+    height: 100%;
+    line-height: 1;
+    font-style: 16px;
+    color: #000;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: scroll;
+}
+
+.container {
+    width: 500px;
+    margin: 0px auto;
+}
+
+/* START Редактирование первого задания */
+
+.mission__one-container {
+    margin: 30px auto;
+    border: 1px solid rgb(156, 153, 153);
+    width: 280px;
+    line-height: 1.3;
+    padding: 12px 8px;
+}
+
+.mission__one-title {
+    color: rgb(199, 36, 36);
+    font-size: 15px;
+    font-weight: bold ;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.mission__one-statis {
+    display: flex;
+    justify-content: space-between;
+}
+
+.statis-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    width: 60px;
+
+    font-weight: 700;
+}
+
+/* END Редактирование первого задания */
+
+/* START Редактирование второго задания */
+
+.mission__two-container {
+    margin: 30px auto;
+    border: 1px solid rgb(156, 153, 153);
+    width: 380px;
+    line-height: 1.3;
+    padding: 8px 4px;
+
+    font-weight: 700;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-left {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+
+.mission__time {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+.mission__two-text{
+    color: red;
+    font-style: bold;
+}
+
+.mission__discounts {
+    border: 1px dashed rgb(226, 69, 69);
+    border-radius: 10px;
+    text-align: center;
+    width: 130px;
+    height: 70px;
+    padding: 8px 2px;
+}
+
+.twelve {
+    font-size: 25px;
+    color: red;
+}
+
+/* END Редактирование второго задания */
+
+/* START Редактирование третьего задания */
+
+.missiom__three-container {
+    margin: 30px auto;
+    border: 5px solid rgb(56, 134, 89);
+    border-radius: 20px;
+    border-bottom-width: 15px;
+
+    width: 490px;
+    height: 440px;
+    line-height: 1.3;
+
+    font-weight: 700;
+    
+}
+
+.color {
+    text-align: center;
+    background-color: rgb(56, 134, 89);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 10px;
+    color: bisque;
+    font-size: 30px;
+}
+
+.container-items {
+    height: 300px;
+    margin: 25px;
+    padding-left: 25px ;
+
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+/* :D */
+
+.item {
+    width: 55px;
+    height: 55px;
+    background-color: aquamarine;
+    margin: 10px;
+}
+
+.item.two {
+    background-color: rgb(207, 66, 66);
+}
+
+.item.three {
+    background-color: rgb(113, 214, 18);
+    width: 65px;
+    height: 65px;
+    margin: 4px;
+    border: 4px solid rgb(22, 80, 128);
+}
+
+.item.four {
+    background-color: rgb(80, 78, 196);
+}
+
+.item.five {
+    background-color: rgb(191, 199, 84);
+}
+
+.item.six {
+    background-color: rgb(197, 58, 134);
+}
+
+.item.seven {
+    background-color: rgb(33, 88, 76);
+}
+
+.item.eight {
+    background-color: rgb(253, 135, 24);
+}
+
+.item.nine {
+    background-color: rgb(9, 123, 175);
+}
+
+.item.ten {
+    background-color: rgb(155, 14, 221);
+}
+
+.item.eleven {
+    background-color: rgb(231, 229, 111);
+}
+
+.item.twelve {
+    background-color: rgb(86, 15, 218);
+
+}
+
+.item.thirteen {
+    background-color: rgb(60, 250, 155);
+}
+
+.item.fourteen {
+    background-color: rgb(32, 58, 145);
+}
+
+.item.fifteen {
+    background-color: rgb(99, 172, 65);
+}
+
+.item.sixteen {
+    background-color: rgb(191, 125, 230);
+}
+
+.item.seventeen {
+    background-color: rgb(170, 98, 98);
+}
+/* END Редактирование третьего задания */
