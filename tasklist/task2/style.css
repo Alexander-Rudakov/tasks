@@ -30,6 +30,13 @@ body {
     border-radius: 30px;
 }
 
+@media (max-width: 460px) {
+    .main__container {
+        width: 300px;
+    }
+
+}
+
 .form {
     display: flex;
     flex-direction: column;
@@ -73,6 +80,12 @@ body {
 .checkbox__text {
     font-size: 15px;
 }
+
+.text_link {
+    text-decoration: none;
+    color: rgb(100, 100, 207);
+}
+
 .footer__button {
     min-width: 160px;
     line-height: 35px;
@@ -83,6 +96,13 @@ body {
 
     border: none;
     border-radius: 8px;
+}
+
+@media (max-width: 460px) {
+    .footer__button {
+        margin-right: 150px;
+    }
+
 }
 
 .footer__button:hover {
