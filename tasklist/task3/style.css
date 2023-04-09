@@ -1,0 +1,81 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: rgba(0, 0, 0, 0.76);
+}
+
+.container__window-exit {
+    width: 60%;
+    height: 40%;
+
+    background-color: white;
+    box-shadow: 0px 0px 3px black;
+    border-radius: 5px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.window-exit__title {
+    font-size: 3em;
+}
+
+.window__button {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.window__button > button {
+    width: 100px;
+    height: 20px;
+    margin: 30px 50px;
+    padding: 20px;
+
+    border: none;
+    border-radius: 5px;
+
+    text-align: center;
+    color: white;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.window__button-yes {
+    background:rgb(52, 168, 52);
+}
+
+.window__button-no {
+    background:rgb(170, 59, 59);
+}
+
+button:hover {
+    filter: invert(.2);
+}
