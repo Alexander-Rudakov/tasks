@@ -1,243 +1,137 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World Fishing</title>
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-    <div class="wrapper">
-        <div class="content">
+@import url(./reset.css);
+@import url(./media.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-    <!-- header -->
-    <header class="header">
-        <div class="container">
-            <div class="header__inner">
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100%;
 
-                <div class="header__logo logo">
-                    <a href="#" class="logo__img">
-                        <img src="./img/header/logo.png" alt="logo">
-                    </a>
-                    <a href="#" class="logo__title">
-                    <h2>World <br> Fishing</h2>
-                    </a>
-                </div>
+    font-size: 16px;
+    font-weight: 500;
+}
 
-                <nav class="nav">
-                    <ul class="nav__list list">
-                        <li class="list__item">
-                            <a href="#" class="list__link active">Все категории</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#" class="list__link">Лососёвые</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#" class="list__link">Морская</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#" class="list__link">Речная</a>
-                        </li>
-                    </ul>
-                </nav>
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 
-            </div>
-        </div>
-    </header>
+.content {
+    flex: 1 0 auto;
+  }
 
-    <!-- main -->
-    <main class="main">
-        <div class="container">
-            <section class="main__inner">
+.container {
+    max-width: 1426px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
 
-                <div class="main__item">
-                    <div class="main__image">
-                        <img src="./img/maritime/01.jpg" alt="image">
-                    </div>
-                    <p class="image__title">
-                        Атлантическая сельдь
-                    </p>
-                    <p class="image__text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, quo ipsa, id repellendus quasi excepturi tenetur numquam eveniet at asperiores ad animi vitae fugit, accusantium facere molestias laudantium sed cupiditate!
-                    </p>
-                </div>
+/* Header */
+.header {
+    width: 100%;
+    padding: 10px 0 10px;
+    margin-bottom: 40px;
 
-                <div class="main__item">
-                    <div class="main__image">
-                        <img src="./img/maritime/02.jpg" alt="image">
-                    </div>
-                    <p class="image__title">
-                        Большеглазая килька
-                    </p>
-                    <p class="image__text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, quo ipsa, id repellendus quasi excepturi tenetur numquam eveniet at asperiores ad animi vitae fugit, accusantium facere molestias laudantium sed cupiditate!
-                    </p>
-                </div>
-                
-                <div class="main__item">
-                    <div class="main__image">
-                        <img src="./img/maritime/03.jpg" alt="image">
-                    </div>
-                    <p class="image__title">
-                        Севрюга
+    background-color: rgb(208, 225, 245);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
 
-                    </p>
-                    <p class="image__text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, quo ipsa, id repellendus quasi excepturi tenetur numquam eveniet at asperiores ad animi vitae fugit, accusantium facere molestias laudantium sed cupiditate!
-                    </p>
-                </div>
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-                <div class="main__item">
-                    <div class="main__image">
-                        <img src="./img/maritime/04.jpg" alt="image">
-                    </div>
-                    <p class="image__title">
-                        Хамса́
-                    </p>
-                    <p class="image__text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, quo ipsa, id repellendus quasi excepturi tenetur numquam eveniet at asperiores ad animi vitae fugit, accusantium facere molestias laudantium sed cupiditate!
-                    </p>
-                </div>
+    
+}
 
-                <div class="main__item">
-                    <div class="main__image">
-                        <img src="./img/river/01.jpg" alt="image">
-                    </div>
-                    <p class="image__title">
-                        Осетр
-                    </p>
-                    <p class="image__text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, quo ipsa, id repellendus quasi excepturi tenetur numquam eveniet at asperiores ad animi vitae fugit, accusantium facere molestias laudantium sed cupiditate!
-                    </p>
-                </div>
+.header__logo {
+    display: flex;
+    align-items: center;
+}
 
-                <div class="main__item">
-                    <div class="main__image">
-                        <img src="./img/river/02.jpg" alt="image">
-                    </div>
-                    <p class="image__title">
-                        Налим
-                    </p>
-                    <p class="image__text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, quo ipsa, id repellendus quasi excepturi tenetur numquam eveniet at asperiores ad animi vitae fugit, accusantium facere molestias laudantium sed cupiditate!
-                    </p>
-                </div>
+.logo__img {
+    margin-right: 10px;
+}
 
-                <div class="main__item">
-                    <div class="main__image">
-                        <img src="./img/river/03.jpg" alt="image">
-                    </div>
-                    <p class="image__title">
-                        Щука
-                    </p>
-                    <p class="image__text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, quo ipsa, id repellendus quasi excepturi tenetur numquam eveniet at asperiores ad animi vitae fugit, accusantium facere molestias laudantium sed cupiditate!
-                    </p>
-                </div>
+.logo__title {
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
 
-                <div class="main__item">
-                    <div class="main__image">
-                        <img src="./img/river/04.jpeg" alt="image">
-                    </div>
-                    <p class="image__title">
-                        Сом
-                    </p>
-                    <p class="image__text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, quo ipsa, id repellendus quasi excepturi tenetur numquam eveniet at asperiores ad animi vitae fugit, accusantium facere molestias laudantium sed cupiditate!
-                    </p>
-                </div>
+    color: rgb(97, 88, 219);
 
-                <div class="main__item">
-                    <div class="main__image">
-                        <img src="./img/salmon/01.jpg" alt="image">
-                    </div>
-                    <p class="image__title">
-                        Форель
-                    </p>
-                    <p class="image__text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, quo ipsa, id repellendus quasi excepturi tenetur numquam eveniet at asperiores ad animi vitae fugit, accusantium facere molestias laudantium sed cupiditate!
-                    </p>
-                </div>
+}
 
-                <div class="main__item">
-                    <div class="main__image">
-                        <img src="./img/salmon/02.jpg" alt="image">
-                    </div>
-                    <p class="image__title">
-                        Горбуша
-                    </p>
-                    <p class="image__text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, quo ipsa, id repellendus quasi excepturi tenetur numquam eveniet at asperiores ad animi vitae fugit, accusantium facere molestias laudantium sed cupiditate!
-                    </p>
-                </div>
+/* Nav */
+.nav {
+}
+.nav__list {
+    display: flex;
+}
 
-                <div class="main__item">
-                    <div class="main__image">
-                        <img src="./img/salmon/03.jpg" alt="image">
-                    </div>
-                    <p class="image__title">
-                        Сёмга
-                    </p>
-                    <p class="image__text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, quo ipsa, id repellendus quasi excepturi tenetur numquam eveniet at asperiores ad animi vitae fugit, accusantium facere molestias laudantium sed cupiditate!
-                    </p>
-                </div>
+.list__item {
+}
 
-                <div class="main__item">
-                    <div class="main__image">
-                        <img src="./img/salmon/04.jpg" alt="image">
-                    </div>
-                    <p class="image__title">
-                        Нерга
-                    </p>
-                    <p class="image__text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, quo ipsa, id repellendus quasi excepturi tenetur numquam eveniet at asperiores ad animi vitae fugit, accusantium facere molestias laudantium sed cupiditate!
-                    </p>
-                </div>
+.list__item:not(:first-child) {
+    margin-left: 20px;
+}
 
-            </section>
-        </div>
-    </main>
 
-    <footer class="footer">
-        <div class="container">
+.list__link {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
 
-            <div class="header__inner">
+    color: rgb(97, 88, 219);
+}
 
-                <div class="header__logo logo">
-                    <a href="#" class="logo__img">
-                        <img src="./img/header/logo.png" alt="logo">
-                    </a>
-                    <a href="#" class="logo__title">
-                    <h2>World <br> Fishing</h2>
-                    </a>
-                </div>
+.list__link.active:hover,
+.list__link:hover {
+    color: rgb(13, 42, 104);
+    
+}
 
-                <nav class="nav">
-                    <ul class="nav__list list">
-                        <li class="list__item">
-                            <a href="#" class="list__link active">Все категории</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#" class="list__link">Лососёвые</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#" class="list__link">Морская</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#" class="list__link">Речная</a>
-                        </li>
-                    </ul>
-                </nav>
+.list__link.active {
+    color: rgb(63, 57, 139);
+}
 
-            </div>
+/* Main */
 
-        </div>
-    </footer>
+.main {
+}
 
-    </div>
-</div>
+.main__inner {
+    max-width: 100%;
 
-</body>
-</html>
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 30px;
+}
+
+/* Main Item */
+.main__item {
+    width: 33.333%;
+    max-width: 400px;
+
+    margin-bottom: 30px;
+}
+.main__image {
+}
+.image__title {
+}
+.image__text {
+}
+
+/* Footer */
+
+.footer {
+    flex: 0 0 auto;
+    padding: 10px 0 10px;
+    max-height: 100%;
+
+    background-color: rgb(208, 225, 245);
+}
