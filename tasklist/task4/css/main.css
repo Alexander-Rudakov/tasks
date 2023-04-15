@@ -57,7 +57,7 @@ body {
 
 	width: 20px;
 	height: 20px;
-	background: rgb(255, 255, 255);
+	background: linear-gradient(180deg, rgb(88, 182, 245), rgb(255, 255, 255) );
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
 	border-radius: 50px;
@@ -70,9 +70,9 @@ body {
 
 	width: 30px;
 	height: 30px;
-	background: rgb(255, 255, 255);
+	background: rgb(88, 182, 245);
 	border-radius: 50px;
-    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.356);
+    box-shadow: inset 5px 2px 2px rgba(252, 252, 252, 0.356);
 }
 .circle-three {
     position: absolute;
@@ -81,9 +81,9 @@ body {
 
 	width: 40px;
 	height: 40px;
-	background: rgb(255, 255, 255);
+	background: rgb(88, 182, 245);
 	border-radius: 50px;
-    box-shadow: inset 3px 2px 2px rgba(0, 0, 0, 0.356);
+    box-shadow: inset 5px 2px 2px rgba(252, 252, 252, 0.356);
 }
 .circle-four {
     position: absolute;
@@ -92,9 +92,9 @@ body {
 
 	width: 45px;
 	height: 44px;
-	background: rgb(255, 255, 255);
+	background: rgb(88, 182, 245);
 	border-radius: 50px;
-    box-shadow: inset 4px 2px 2px rgba(0, 0, 0, 0.356);
+    box-shadow: inset 5px 2px 2px rgba(252, 252, 252, 0.356);
 }
 .circle-five {
     position: absolute;
@@ -103,27 +103,34 @@ body {
 
 	width: 50px;
 	height: 50px;
-	background: rgb(255, 255, 255);
+	background: rgb(88, 182, 245);
 	border-radius: 50px;
 
-    box-shadow: inset 5px 2px 2px rgba(0, 0, 0, 0.356);
+    box-shadow: inset 5px 2px 2px rgba(252, 252, 252, 0.356);
 }
 
 @media screen and (max-width: 1124px) {
-    .circle-one {
+    .circle-five {
         display: none;
     }
-    
-    .circle-two {
-        display: none;
-    }
-    .circle-three {
-        display: none;
-    }
+}
+@media screen and (max-width: 1101px) {
     .circle-four {
         display: none;
     }
-    .circle-five {
+}
+@media screen and (max-width: 1078px) {
+    .circle-three {
+        display: none;
+    }
+}
+@media screen and (max-width: 1055px) {
+    .circle-two {
+        display: none;
+    }
+}
+@media screen and (max-width: 1032px) {
+    .circle-one {
         display: none;
     }
 }
@@ -204,6 +211,13 @@ body {
 }
 
 @media screen and (max-width: 899px) {
+
+    .nav__item {
+        margin-left: 2px;
+    }
+}
+
+@media screen and (max-width: 789px) {
     .header__inner {
         flex-direction: column;
         
@@ -241,7 +255,6 @@ body {
 }
 
 .main__card {
-    position: relative;
 
     margin: 15px 10px;
     max-width: 300px;
@@ -257,10 +270,6 @@ body {
 
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-}
-
-img:nth-child(even) {
-    object-fit: contain;
 }
 
 .card__footer {
@@ -412,26 +421,32 @@ img:nth-child(even) {
 
 @media screen and (max-width: 899px) {
 
+    .footer__item {
+        margin-left: 2px;
+    }
+    
+}
 
+@media screen and (max-width: 789px) {
     .footer__inner {
         flex-direction: column;
         
     }
-
+    
     .footer__logo {
         display: none;
     }
-
+    
     .footer__nav {
-
+    
     }
-
+    
     .footer__list {
         flex-direction: column;
         align-items: center;
         row-gap: 10px;
     }
-
+    
     .footer__item {
         margin: 0 auto;
     }
