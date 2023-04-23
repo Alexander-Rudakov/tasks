@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js"></script>
+</head>
+
+<body>
+
+    
+
+
+    <script>
+        for (let product of products) {
+            let div = document.createElement("div");
+            let h2 = document.createElement("h2");
+            h2.innerHTML = product.name;
+            let p = document.createElement("p");
+            p.innerHTML = (`Цена:  ${product.price}  Руб`);
+            div.appendChild(h2);
+            div.appendChild(p);
+            document.body.appendChild(div);
+        }
+    </script>
+</body>
+</html>

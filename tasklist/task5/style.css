@@ -1,0 +1,33 @@
+html,
+body {
+    box-sizing: border-box;
+}
+
+h2, p {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+
+    background: url(./img/undersea.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 400px;
+    height: 300px;
+    margin: 60px;
+    padding: 20px;
+
+    background-color: rgb(245, 245, 245);
+    text-align: center;
+    box-shadow: 0px 0px 3px rgb(0, 0, 0);
+    border-radius: 10px;
+}
